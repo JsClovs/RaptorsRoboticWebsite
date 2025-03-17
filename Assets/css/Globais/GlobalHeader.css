@@ -1,0 +1,102 @@
+@import url(global.css);
+
+header {
+   width: 100%;
+   position: sticky;
+   top: 0;
+   background: rgb(0, 0, 0);
+   color: white;
+   padding: 15px 30px;
+   z-index: 1000;
+}
+
+header .header-container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+header h3 {
+   color: var(--cor-primaria);
+   margin: 0;
+}
+
+header .conteudo {
+   display: none;
+   position: fixed;
+   top: 80px;
+   right: 20px;
+   background: white;
+   border-radius: 8px;
+   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+   z-index: 1100;
+}
+
+header .conteudo li {
+   list-style: none;
+   padding: 10px;
+   text-align: center;
+}
+
+header .conteudo li a {
+   color: black;
+   text-decoration: none;
+   padding: 10px;
+   display: block;
+   background-color: var(--cor-primaria);
+   border-radius: 4px;
+}
+
+header .conteudo.ativo {
+   display: flex;
+   flex-direction: column;
+}
+
+.menuhamburguer {
+   cursor: pointer;
+   display: flex;
+}
+
+#Hamburguerclose {
+   display: none;
+}
+
+@media screen and (min-width: 724px) {
+   header {
+      padding: 0px 40px;
+   }
+
+   header .conteudo {
+      display: flex;
+      flex-direction: row;
+      position: static;
+      background: transparent;
+      color: white;
+      box-shadow: none;
+   }
+
+   header .conteudo li {
+      padding: 10px;
+   }
+
+   header .conteudo li a {
+      color: white;
+      background: transparent;
+   }
+
+   .menuhamburguer {
+      display: none;
+   }
+}
+
+@media screen and (min-width: 1024px) {
+   header .header-container {
+      margin: 1px 80px;
+   }
+}
+
+@media screen and (min-width: 1124px) {
+   header .header-container {
+      margin: 1px 200px;
+   }
+}

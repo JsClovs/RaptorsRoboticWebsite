@@ -1,0 +1,6 @@
+@import url(global.css);
+
+footer {
+   background-color: var(--cor-primaria);
+   text-align: center;
+}

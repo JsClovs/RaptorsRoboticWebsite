@@ -1,9 +1,15 @@
-@import url(../../Global/global.css);
+
 @import url(../../Global/GlobalHeader.css);
 @import url(../../Global/GlobalFooter.css);
-@import url(Adaptative.css);
+@import url(../../Global/global.css);
 
-/* Links */
+
+
+ #Home {
+   border: 1px solid var(--cor-primaria);
+ }
+
+/* LINK */
 a {
    color: var(--cor-primaria);
    transition: color 0.3s ease-in-out;
@@ -15,8 +21,10 @@ a:hover {
 
 /* MAIN LINHA 1 */
 main .linha1 {
-   background: linear-gradient(to bottom, rgba(40, 27, 0, 0.674), rgb(0, 0, 0)), 
-               url("../../../img/index/Robo pendurando.jpg") center/cover;
+   border: 10px solid var(--cor-secundaria);
+   background: linear-gradient(to bottom, rgba(40, 27, 0, 0.674), var(--cor-secundaria)), 
+               url("../../../img/index/Robo pendurando.jpg") center center;
+   background-size: cover;
    padding: 30px;
    height: 600px;
 }
@@ -55,20 +63,25 @@ main .linha2 {
    flex-wrap: wrap;
    padding: 100px 10px;
    justify-content: center;
+   background-color: var(--cor-secundaria);
 }
 
 main .linha2 article {
    width: 300px;
-   height: 300px;
+   height: 500px;
+   background-image: linear-gradient(to bottom left, black, rgb(14, 13, 0));
    border: 2px solid var(--cor-primaria);
    border-radius: 10px;
    margin: 20px;
    padding: 20px;
    transition: transform 0.5s ease-in-out;
+
+
+   
 }
 
 main .linha2 article:hover {
-   transform: scale(1.1);
+   transform: scale(1.05);
 }
 
 main .linha2 article h3 {
@@ -76,29 +89,52 @@ main .linha2 article h3 {
    font-size: 25px;
 }
 
+main .linha2 article p {
+   margin: 20px 1px;
+}
+
+main .linha2 article a{
+   background-image: linear-gradient(to bottom left, black, rgb(14, 13, 0));
+   color: var(--cor-primaria);
+   padding: 5px 10px;
+   border: 1px solid var(--cor-primaria);
+   transition: background-color 0.5s, color 0.5s;
+}
+
+main .linha2 article a:hover {
+   color: rgb(255, 255, 255);
+   border: 1px solid white;
+}
+
 /* MAIN LINHA 3 */
 main .linha3 {
-   background-color: var(--cor-primaria);
+   background: linear-gradient(to bottom, rgba(255, 170, 0, 0.797), var(--cor-primaria)), 
+               url("../../../img/index/Foto-equipe-completa.jpg") center;
    color: black;
-   display: flex;
-   flex-wrap: wrap;
-   padding: 100px 10px;
+   border: 50px solid var(--cor-secundaria);
+   padding: 100px 0px;
+   
+}
+
+.linha3-conainer {
+  display: flex;
+   flex-wrap: wrap; 
    justify-content: center;
 }
 
-main .linha3 div {
+main .linha3 .linha3-conainer div {
    width: 400px;
-   padding: 10px;
-   margin: 20px;
+   padding: 0px;
+   margin: 10px;
 }
 
-main .linha3 img {
+main .linha3 .linha3-conainer img {
    border-radius: 3px;
    border: 2px solid black;
    box-shadow: 5px 5px 0px black;
 }
 
-main .linha3 a {
+main .linha3 .linha3-conainer a {
    color: white;
    background-color: black;
    padding: 3px 10px;
@@ -106,7 +142,7 @@ main .linha3 a {
    transition: background-color 0.3s;
 }
 
-main .linha3 a:hover {
+main .linha3 .linha3-conainer a:hover {
    background-color: var(--cor-primaria);
    color: black;
 }
@@ -115,12 +151,12 @@ main .linha3 a:hover {
 main .linha4 {
    padding: 100px 20px;
    text-align: center;
-   background-image: linear-gradient(to left bottom, black, black);
+   background-color: var(--cor-secundaria);
 }
 
 main .linha4 h1 {
    margin: 10px;
-   font-size: 40px;
+   font-size: 30px;
 }
 
 main .linha4 .imgpatrocinadores {
@@ -136,7 +172,6 @@ main .linha4 .imgpatrocinadores a {
 
 main .linha4 .imgpatrocinadores img {
    width: 150px;
-   margin: 10px;
    transition: transform 0.3s ease-in-out;
 }
 
@@ -145,6 +180,50 @@ main .linha4 .imgpatrocinadores img:hover {
 }
 
 main .linha4 .imgpatrocinadores > div {
-   margin: auto;
    padding: 10px;
+}
+
+@media screen and (min-width: 750px) {
+   main .texto-principal {
+       font-size: 40px;
+       color: var(--cor-primaria);
+       align-items: center;
+    }  
+
+
+    main .texto-principal {
+      text-align: center;
+    }
+
+    main .sub-texto > p {
+      display: block;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .linha1 img {
+      display: block;
+      margin: auto;
+    }
+
+
+ .linha4 h1 {
+      padding: 10px;
+      font-size: 60px !important;
+      margin: 0px !important;
+    }
+
+    .linha4 a {
+      display: block;
+      margin-bottom: 100px;
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+
+main .linha3 {
+   border: 1px solid var(--cor-secundaria) !important; 
+}
+
 }

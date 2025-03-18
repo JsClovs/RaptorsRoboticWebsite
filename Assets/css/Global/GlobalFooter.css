@@ -5,7 +5,14 @@ footer {
    background-color: var(--cor-primaria);
    text-align: center;
    color: rgb(0, 0, 0);
-   padding: 50px 40px;
+   padding: 30px 40px;
+   transition: cubic-bezier(0.075, 0.82, 0.165, 1) .9s;
+}
+
+footer a:hover {
+   background-color: black;
+   color: var(--cor-primaria) !important;
+   transition: cubic-bezier(0.075, 0.82, 0.165, 1) .9s;
 }
 
 footer ul {
@@ -13,7 +20,8 @@ footer ul {
    display: flex;
    flex-flow: row wrap;
    justify-content: center;
-   padding: 1px 10px;
+   padding: 1px 1px;
+   
 
 }
 
@@ -22,31 +30,39 @@ footer ul > li >  a {
    text-align: center;
    
    margin: 3px;
-   background-color: black;
+   color: black;
+   font-weight: bold;
+
+   transition: cubic-bezier(0.075, 0.82, 0.165, 1) .9s;
 }
 
 footer ul > li {
    margin: 2px;
 }
 
-.ContatoFooter {
-   margin: 20px;
+.footer-container,
+.ContatoFooter,
+.EquipeFooter {
+   width: auto;
+   height: auto;
+   margin: 20px auto;
 }
 
-.EquipeFooter {
-   width: 80vw;
-   margin: 10px auto;
-   text-align: justify;
+.ContatoFooter a {
+   font-weight: bold;
+   color: black;
 }
 
 @media screen and (min-width:850px) {
-   .EquipeFooter {
-       width: 500px ;
-       margin: 10px auto;
-       text-align: justify;
-    }
-
     footer {
       display: flex;
     }
+
+   .footer-container,
+   .ContatoFooter,
+   .EquipeFooter {
+      width: 400px;
+      height: auto;
+      margin: 20px auto;
+}
 }

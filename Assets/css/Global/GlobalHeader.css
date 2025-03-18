@@ -83,6 +83,10 @@ header .conteudo.ativo {
       background: transparent;
    }
 
+   header .conteudo li a:hover {
+      color: rgb(127, 127, 127);
+   }
+
    .menuhamburguer {
       display: none;
    }

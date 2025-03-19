@@ -111,7 +111,6 @@ main .linha3 {
    background: linear-gradient(to bottom, rgba(255, 170, 0, 0.797), var(--cor-primaria)), 
                url("../../../img/index/Foto-equipe-completa.jpg") center;
    color: black;
-   border: 50px solid var(--cor-secundaria);
    padding: 100px 0px;
    
 }

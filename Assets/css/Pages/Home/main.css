@@ -64,6 +64,7 @@ main .linha2 {
    padding: 100px 10px;
    justify-content: center;
    background-color: var(--cor-secundaria);
+   gap: 30px ;
 }
 
 main .linha2 article {
@@ -75,9 +76,6 @@ main .linha2 article {
    margin: 20px;
    padding: 20px;
    transition: transform 0.5s ease-in-out;
-
-
-   
 }
 
 main .linha2 article:hover {

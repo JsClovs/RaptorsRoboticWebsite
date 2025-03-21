@@ -8,6 +8,15 @@
    --largura-maxima: 1200px;
  }
 
+ a {
+  color: var(--cor-primaria);
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: white;
+}
+
 * {
    margin: 0;
    padding: 0;

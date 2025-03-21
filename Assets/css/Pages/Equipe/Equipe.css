@@ -1,12 +1,148 @@
-@import url(../../Global/global.css);
 @import url(../../Global/GlobalHeader.css);
 @import url(../../Global/GlobalFooter.css);
+@import url(../../Global/global.css);
 
-:root {
-   --cor-primaria: #ffd000;
-   --cor-secundaria: #060606;
- }
 
- #Equipe {
-   border: 1px solid var(--cor-primaria);
- }
+#Equipe {
+  border: 1px solid var(--cor-primaria);
+}
+
+body {
+  background-color: var(--cor-secundaria);
+  line-height: 1.6;
+}
+
+a {
+  color: var(--cor-primaria);
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+
+main .membros {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(30, 30, 30, 0.9));
+    
+  border: 1px solid var(--cor-primaria);
+
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(255, 204, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+main .membros > div {
+  height: 600px;
+
+  background-image: linear-gradient(to bottom left, var(--cor-secundaria), rgb(12, 8, 0));
+}
+
+main .membros > div h2 {
+}
+
+main .membros > div > figure {
+  width: 300px;
+  height: 300px;
+  background-color: wheat;
+  transition: transform 0.5s ease-in-out;
+
+  border: 2px solid var(--cor-primaria);
+}
+
+main .membros > div > figure:hover {
+  transform: scale(1.05);
+}
+
+h4 {
+  color: var(--cor-primaria);
+}
+
+@media screen and (min-width: 750px) {
+  div.membros > div p {
+    width: 300px;
+    
+  }
+  
+  main #initial-inform h1 {
+    font-size: 2.5rem;
+    display: block;
+    text-align: right;
+  }
+
+    main #initial-inform img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  main .membros > div > figure {
+    width: 250px;
+    height: 250px;
+  }
+  
+  div.membros > div p {
+    text-align: justify;
+    font-size: 15px;
+    margin: 0 auto;
+  }
+
+
+}
+
+#tecnico figure {
+  background-image: url(../../../img/Equipe/icone/Anderson.jpg);
+  background-size: cover ;
+}
+
+#mem1 figure {
+  background-image: url(../../../img/Equipe/icone/Moises.jpg);
+  background-size: cover;
+}
+
+#mem2 figure {
+  background-image: url(../../../img/Equipe/icone/Elias.jpg);
+  background-size: cover ;
+}
+
+#mem3 figure {
+  background-image: url(../../../img/Equipe/icone/Mike.jpg);
+  background-size: cover;
+}
+
+#mem4 figure {
+  background-image: url(../../../img/Equipe/icone/raquel.jpg);
+  background-size: cover;
+}
+
+#mem5 figure {
+  background-image: url(../../../img/Equipe/icone/Cloves.jpg);
+  background-size: cover;
+}
+
+#mem6 figure {
+  background-image: url(../../../img/Equipe/icone/Livia.jpg);
+  background-size: cover;
+}
+
+#mem7 figure {
+  background-image: url(../../../img/Equipe/icone/willian.jpg);
+  background-size: cover;
+}
+
+#mem8 figure {
+  background-image: url(../../../img/Equipe/icone/Jhonatan.jpg);
+  background-size: cover;
+}
+
+
+
+
+

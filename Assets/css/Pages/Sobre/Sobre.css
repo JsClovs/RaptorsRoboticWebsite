@@ -1,0 +1,55 @@
+@import url(../../Global/GlobalHeader.css);
+@import url(../../Global/GlobalFooter.css);
+@import url(../../Global/global.css);
+
+a {
+  color: var(--cor-primaria) ;
+  transition: color 0.3s ease-in-out;
+}
+ 
+a:hover {
+  color: white;
+}
+
+#Sobre {
+  border: 1px solid var(--cor-primaria);
+}
+
+body {
+   background-color: var(--cor-secundaria);
+}
+
+main {
+}
+
+main article {
+  margin: 10px auto;
+  max-width: 600px;
+  border: 1px solid var(--cor-primaria);
+  padding: 10px;
+}
+
+main article section {
+   margin: 10px 1px;
+   padding: 10px;
+   border-radius: 10px;
+}
+
+
+main div.imagem .imagerobop{
+   background-image: url(../../../img/index/Robo\ pendurando.jpg);
+   background-position: right center;
+   width: 600px;
+   height: 300px;
+   
+   display: block;
+   margin: 0px auto;
+
+   border-radius: 10px;
+   
+}
+
+main div.imagem p {
+   text-align: center;
+   
+}

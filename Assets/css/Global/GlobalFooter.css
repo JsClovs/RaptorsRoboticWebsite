@@ -1,6 +1,15 @@
 @import url(global.css);
 @import url(GlobalFooterAdp.css);
 
+a {
+   color: var(--cor-primaria) ;
+   transition: color 0.3s ease-in-out;
+ }
+ 
+ a:hover {
+   color: white;
+ }
+
 footer {
    background-color: var(--cor-primaria);
    text-align: center;

@@ -2,11 +2,110 @@
 @import url(../../Global/GlobalHeader.css);
 @import url(../../Global/GlobalFooter.css);
 
-:root {
-   --cor-primaria: #ffd000;
-   --cor-secundaria: #060606;
- }
+a {
+  color: var(--cor-primaria);
+  transition: color 0.3s ease-in-out;
+}
 
- #Patrocinios {
-   border: 1px solid var(--cor-primaria);
- }
+a:hover {
+  color: white;
+}
+
+#Patrocinios {
+  border: 1px solid var(--cor-primaria);
+}
+
+main > div > div img{
+  width: 150px;
+}
+
+main > div > div {
+  text-align: center;
+}
+
+main > div > div > div {
+  width: 200px;
+}
+
+main > div#patrocinadores{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 30px 100px;
+
+  border: 1px solid rgba(141, 101, 0, 0.267);
+  border-radius: 20px;
+  max-width: 1200px;
+  margin: 20px auto;
+
+  
+  color: black;
+  background-color: var(--cor-primaria);
+}
+
+main > div#patrocinadores:hover {
+  border: 1px solid var(--cor-primaria);
+}
+
+main > div#patrocinadores > div {
+  margin: 10px;
+  transition: ease-in-out .5s;
+}
+
+main > div#patrocinadores > div:hover {
+  scale: 110%;
+  
+}
+
+main > div#patrocinadores p{
+  padding: 1px 20px;
+}
+
+
+
+main > div#patrocinadores img{
+  border: 2px solid black;
+  border-radius: 6px;
+}
+
+main > div#titulo{
+  margin: 40px auto;
+  font-size: 20px;
+  text-align: center;
+}
+
+main > div#titulo h1 {
+  color:  var(--cor-primaria);
+}
+
+.motivos {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 20px;
+  
+}
+
+.motivos li {
+
+  font-size: 18px;
+  width: 25%;
+  height: 400px;
+  text-align: start;
+  padding: 20px;
+  border: 1px solid var(--cor-primaria);
+  border-radius: 10px;
+
+  transition: ease-in-out .5s;
+}
+
+.motivos li:hover {
+  scale: 110%;
+}
+
+.motivos li h3 {
+  font-size: 30px;
+  text-align: center;
+  padding: 10px;
+}

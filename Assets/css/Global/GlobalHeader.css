@@ -1,5 +1,13 @@
 @import url(global.css);
 
+:root {
+   --cor-primaria: #ffd000 !important;
+   --cor-secundaria: #000000 !important;
+   --fonte-principal: 'Roboto', sans-serif;
+   --espacamento-padrao: 16px;
+   --largura-maxima: 1200px;
+ }
+
 header {
    width: 100%;
    position: sticky;

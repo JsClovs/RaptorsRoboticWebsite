@@ -7,15 +7,55 @@
   border: 1px solid var(--cor-primaria);
 }
 
-body {
-  background-color: var(--cor-secundaria);
-  line-height: 1.6;
+a {
+  color: var(--cor-primaria) ;
+  transition: color 0.3s ease-in-out;
 }
 
-a {
+a:hover {
+  color: white;
+}
+
+body {
+  background-color: var(--cor-secundaria);
+}
+
+
+#initial-inform {
+  text-align: center;
+}
+#initial-inform > h1,h2 {
+  font-size: 50px;
+  padding-top: 20px;
+  color: var(--cor-primaria);
+}
+#initial-inform  div  img {
+  margin: auto;
+  width: 300px;
+  padding-top: 20px;
+}
+#initial-inform  div  {
+  background-color: white;
+  display: block;
+}
+#initial-inform  div > div {
+  background-color: rgb(0, 89, 255);
+  padding: 10px;
+}
+#initial-inform  div > div > p {
+  line-height: 40px;
+  text-align: start;
+  max-width: 700px;
+  margin: 1px  auto;
+  font-size: 20px;
+}
+
+div > div > a {
   color: var(--cor-primaria);
   text-decoration: none;
   transition: color 0.3s ease-in-out;
+  text-align: center;
+  display: block;
 }
 
 a:hover {
@@ -24,40 +64,64 @@ a:hover {
 }
 
 
-main .membros {
+main .membros2024 {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
 
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(30, 30, 30, 0.9));
-    
-  border: 1px solid var(--cor-primaria);
-
   border-radius: 15px;
-  box-shadow: 0px 4px 15px rgba(255, 204, 0, 0.2);
   transition: transform 0.3s ease-in-out;
+
+  border: 2px  solid var(--cor-primaria) ;
+  padding: 30px;
+  margin: 50px;
+
+  box-shadow: 0px 0px 200px rgba(255, 255, 255, 0.098);
 }
 
-main .membros > div {
-  height: 600px;
 
-  background-image: linear-gradient(to bottom left, var(--cor-secundaria), rgb(12, 8, 0));
+
+main .membros2024 > div {
+  border: 1px solid rgb(46, 25, 0);
+
+  background-image: linear-gradient(to bottom left, black, rgb(14, 9, 0));
+
+  border-radius: 10px;
+
+  padding: 40px 5px;
+  margin: 10px ;
+  z-index: 100;
+
+  transition: ease-in-out .5s;
 }
 
-main .membros > div h2 {
+main .membros2024 > div:hover {
+  border: 1px solid var(--cor-primaria);
+  box-shadow: 0px 0px 15px var(--cor-primaria);
+  z-index: 200;
+  scale: 105%;
 }
 
-main .membros > div > figure {
-  width: 300px;
+main .membros2024 > div > div {
   height: 300px;
+  padding: 20px;
+}
+
+main .membros2024 > div > figure {
+  max-width: 250px;
+  height: 220px;
+  margin: auto;
+  padding: 20px;
   background-color: wheat;
   transition: transform 0.5s ease-in-out;
 
-  border: 2px solid var(--cor-primaria);
+  border-radius: 10px ;
+
+  border: 5px solid var(--cor-secundaria);
 }
 
-main .membros > div > figure:hover {
+main .membros2024 > div > figure:hover {
   transform: scale(1.05);
 }
 
@@ -66,35 +130,22 @@ h4 {
 }
 
 @media screen and (min-width: 750px) {
-  div.membros > div p {
+  div.membros2024 > div p {
     width: 300px;
-    
-  }
-  
-  main #initial-inform h1 {
-    font-size: 2.5rem;
-    display: block;
-    text-align: right;
-  }
-
-    main #initial-inform img {
-    width: 400px;
   }
 }
 
-@media screen and (max-width: 749px) {
-  main .membros > div > figure {
-    width: 250px;
-    height: 250px;
-  }
-  
-  div.membros > div p {
-    text-align: justify;
-    font-size: 15px;
-    margin: 0 auto;
+@media screen and (max-width: 600px) {
+  main .membros2024 {
+    flex-direction: column;
+    padding: 10px;
+    margin: 20px;
   }
 
-
+  main .membros2024 > div {
+    width: 90%;
+    margin: 10px auto;
+  }
 }
 
 #tecnico figure {

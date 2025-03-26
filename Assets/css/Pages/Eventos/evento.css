@@ -2,16 +2,79 @@
 @import url(../../Global/GlobalFooter.css);
 @import url(../../Global/global.css);
 
-
 #Eventos {
-   border: 1px solid var(--cor-primaria);
- }
+  border: 1px solid var(--cor-primaria);
+}
  
- a {
-   color: var(--cor-primaria) ;
-   transition: color 0.3s ease-in-out;
- }
+a {
+  color: var(--cor-primaria) ;
+  transition: color 0.3s ease-in-out;
+}
  
- a:hover {
-   color: white;
- }
+a:hover {
+  color: white;
+}
+
+article {
+  max-width: 600px;
+  margin: 20px auto;
+
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+
+article .conteudo {
+  display: none !important; 
+}
+
+article.show .conteudo {
+  display: block !important;
+}
+
+main button {
+  background-color: rgba(240, 248, 255, 0);
+  border: 1px solid black;
+  color: black;
+  padding: 10px;
+  width: 100px;
+  margin: 10px;
+
+  cursor: pointer;
+}
+
+main img {
+  max-width: 400px;
+  display: block;
+  margin: auto;
+}
+
+main div.tituloesub > div{
+  display: flex;
+  margin: 5px;
+
+  align-items: center;
+  font-size: 13px;
+}
+
+main div.tituloesub > h2 {
+  text-align: center;
+  font-size: 25;
+}
+
+main div.tituloesub {
+  padding: 10px;
+  max-width: 700px;
+  margin: auto;
+}
+
+
+main div.conteudo {
+  padding: 20px;
+  line-height: 25px;
+}
+
+
+main div.conteudo p {
+  margin: 10px;
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ver Mais e Ver Menos</title>
+    <style>
+        .article {
+            width: 300px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .more-content {
+            display: none;
+        }
+        .show .more-content {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="article">
+        <p>Este é um pequeno resumo do artigo...</p>
+        <p class="more-content">Aqui está o conteúdo completo que estava escondido. Agora ele é exibido!</p>
+        <button class="read-more" onclick="toggleContent(this)">Ver mais</button>
+    </div>
+
+    <div class="article">
+        <p>Outro artigo com um resumo inicial...</p>
+        <p class="more-content">Mais informações detalhadas sobre este artigo que estavam escondidas.</p>
+        <button class="read-more" onclick="toggleContent(this)">Ver mais</button>
+    </div>
+
+    <script>
+        function toggleContent(button) {
+            let article = button.parentElement;
+            article.classList.toggle("show");
+
+            // Alternar texto do botão
+            if (article.classList.contains("show")) {
+                button.textContent = "Ver menos";
+            } else {
+                button.textContent = "Ver mais";
+            }
+        }
+    </script>
+
+</body>
+</html>

@@ -17,7 +17,7 @@ a:hover {
 }
 
 body {
-  background-color: var(--cor-secundaria);
+  background-color: black;
 }
 
 #initial-inform {
@@ -34,11 +34,11 @@ body {
   padding-top: 20px;
 }
 #initial-inform  div  {
-  background-color: white;
+  background-color: rgb(255, 255, 255);
   display: block;
 }
 #initial-inform  div > div {
-  background-color: rgb(0, 89, 255);
+  background-image: linear-gradient(to bottom, rgb(0, 76, 176), rgb(0, 0, 86));
   padding: 10px;
 }
 #initial-inform  div > div > p {

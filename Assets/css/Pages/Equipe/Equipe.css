@@ -103,7 +103,7 @@ main .membros2024 > div:hover {
 }
 
 main .membros2024 > div > div {
-  height: 300px;
+  height: 400px;
   padding: 20px;
 }
 
@@ -130,7 +130,12 @@ h4 {
 
 @media screen and (min-width: 750px) {
   div.membros2024 > div p {
-    width: 300px;
+    width: 300px ;
+  }
+
+
+  div.membros2024 > div {
+    width: 400px !important;
   }
 }
 
@@ -142,7 +147,7 @@ h4 {
   }
 
   main .membros2024 > div {
-    width: 90%;
+    width: 90;
     margin: 10px auto;
   }
 }

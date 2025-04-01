@@ -5,6 +5,8 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
    <link rel="stylesheet" href="Assets/css/Pages/Eventos/evento.css">
    <title>Raptors Robotic's</title>
 </head>
@@ -32,6 +34,60 @@
    </header>
 
    <main>
+
+      <article>
+         <div class="tituloesub">
+             <h2>Raptors Day!</h2>
+             <div class="Date">
+                 <span class="material-symbols-outlined">calendar_today</span>
+                 <h5>28 Março</h5>
+             </div>
+             <div class="Locate">
+                 <span class="material-symbols-outlined">location_on</span>
+                 <h5>SESI PADRE AZARIAS SOBREIRA, Juazeiro do Norte, CE, Brazil</h5>
+             </div>
+             <p>
+                 A Raptors participou e organizou um evento incrível chamado <strong>Raptors Day</strong>, 
+                 uma celebração especial para reunir nossa equipe e fortalecer o espírito da robótica.
+             </p>
+             <button type="button" onclick="toggleContent(this)">Ver Mais</button>
+         </div>
+         <div class="conteudo">
+             <h3>Identidade da Equipe</h3>
+               <p>
+                  O Raptors Day foi um momento especial onde todos os membros da equipe se reuniram vestindo 
+                  camisas personalizadas, bonés e bottons representando a robótica. alem de Durante o evento, diversas fotos foram tiradas para registrar o time e todos os envolvidos. 
+                  que define oque e a essência da Raptors. Cada detalhe, desde os acessórios personalizados até as interações entre 
+                  os membros, reforçou a conexão da equipe.
+               </p>
+
+               <div class="swiper">
+                  <div class="swiper-wrapper">
+                      <div class="swiper-slide"><img src="Assets/img/Eventos/Art Raptors day/Imagem do WhatsApp de 2025-03-29 à(s) 10.54.48_1a59c65f.jpg"></div>
+                      <div class="swiper-slide"><img src="Assets/img/Eventos/Art Raptors day/Imagem do WhatsApp de 2025-03-29 à(s) 10.54.48_e8887c0c.jpg"></div>
+                      <div class="swiper-slide"><img src="Assets/img/Eventos/Art Raptors day/Imagem do WhatsApp de 2025-03-29 à(s) 10.54.49_28ff4a2f.jpg"></div>
+                      <div class="swiper-slide"><img src="Assets/img/Eventos/Art Raptors day/Imagem do WhatsApp de 2025-03-29 à(s) 10.54.49_43de2bac.jpg"></div>
+                      <div class="swiper-slide"><img src="Assets/img/Eventos/Art Raptors day/Imagem do WhatsApp de 2025-03-29 à(s) 10.54.49_4451d6f3.jpg"></div>
+                      <div class="swiper-slide"><img src="Assets/img/Eventos/Art Raptors day/Imagem do WhatsApp de 2025-03-29 à(s) 10.54.49_8d4cf41d.jpg"></div>
+                      <div class="swiper-slide"><img src="Assets/img/Eventos/Art Raptors day/Imagem do WhatsApp de 2025-03-29 à(s) 10.54.49_d39b866d.jpg"></div>
+                      <div class="swiper-slide"><img src="Assets/img/Eventos/Art Raptors day/Imagem do WhatsApp de 2025-03-29 à(s) 10.55.01_37150243.jpg"></div>
+                      <div class="swiper-slide"><img src="Assets/img/Eventos/Art Raptors day/Imagem do WhatsApp de 2025-03-30 à(s) 14.54.22_0776358a.jpg"></div>
+
+                  </div>
+                  <div class="swiper-button-next"></div>
+                  <div class="swiper-button-prev"></div>
+                  <div class="swiper-pagination"></div>
+              </div>
+
+             <h3></h3>
+               <p>
+                     Também não esqueceremos de lembrar o partimento de nossa grande amiga Anna Lívia, que teve que deixar o Colégio Padre Azarias, desligando-se da equipe.
+                     Lívia fez uma contribuição enorme para a equipe, sendo uma verdadeira companheira de marketing, dedicada aos projetos e sempre de grande coração, além de sua importância para o grupo. 💛
+               </p>
+         </div>
+     </article>
+                              
+
       <article>
          <div class="tituloesub">
             <h2>Festival Sesi Senai Parangaba</h2>
@@ -70,7 +126,7 @@
 
          </div>
       </article>
-
+      
 
       
    </main>
@@ -103,7 +159,7 @@
             soluções inovadoras e participando de
             competições FTC</p>
 
-            <img src="Assets/img/footer/First-removebg-preview.png" alt="LogoFirst" width="50px">
+   <img src="Assets/img/footer/First-removebg-preview.png" alt="LogoFirst" width="50px">
    <img src="Assets/img/footer/logo_sesi_atual-removebg-preview.png" alt="LogoSesi" width="75px">
    <img src="Assets/img/footer/Logo_do_senai-removebg-preview.png" alt="LogoSenai" width="75px">
       </div>
@@ -116,5 +172,19 @@
    <p>@2025 Raptors Robotic's. Todos os Direitos Reservados.</p>
 
    <script src="Assets/js/Vermais.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+   <script>
+      const swiper = new Swiper('.swiper', {
+            loop: true,
+            navigation: {
+               nextEl: '.swiper-button-next',
+               prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+               el: '.swiper-pagination',
+               clickable: true,
+            },
+      });
+   </script>
 </body>
 </html>

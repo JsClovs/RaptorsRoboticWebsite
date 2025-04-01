@@ -15,7 +15,19 @@ a:hover {
   color: white;
 }
 
-
+.swiper-slide {
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+}
+.swiper-slide > img {
+  width: 100%;
+  height: 500px;
+  align-items: center;
+  object-fit: cover;
+  
+}
 
 article h1, h2, h3, h4 {
   color: var(--cor-primaria);
@@ -74,7 +86,6 @@ main div.tituloesub {
   max-width: 700px;
   margin: auto;
 }
-
 
 main div.conteudo {
   padding: 20px;

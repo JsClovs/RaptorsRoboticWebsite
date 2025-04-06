@@ -1,0 +1,13 @@
+/* Global Imports */
+@import url(../../Global/global.css);
+@import url(../../Global/GlobalHeader.css);
+@import url(../../Global/GlobalFooter.css);
+
+:root {
+   --cor-primaria: #ffd000;
+   --cor-secundaria: #060606;
+ }
+
+ #EProdutos {
+   border: 1px solid var(--cor-primaria);
+ }

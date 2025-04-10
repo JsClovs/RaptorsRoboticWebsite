@@ -38,7 +38,7 @@ body {
   display: block;
 }
 #initial-inform  div > div {
-  background-image: linear-gradient(to bottom, rgb(0, 76, 176), rgb(0, 0, 86));
+  background-image: linear-gradient(to bottom, rgb(0, 37, 86), rgb(0, 0, 0));
   padding: 10px;
 }
 #initial-inform  div > div > p {
@@ -76,7 +76,6 @@ main .membros2024 {
   padding: 30px;
   margin: 50px;
 
-  box-shadow: 0px 0px 200px rgba(255, 255, 255, 0.098);
 }
 
 
@@ -155,6 +154,12 @@ h4 {
 #tecnico figure {
   background-image: url(../../../img/Equipe/icone/Anderson.jpg);
   background-size: cover ;
+}
+
+#cordenadora figure {
+  background-image: url(../../../img/Equipe/icone/individuo.jpg);
+  background-size: cover;
+  
 }
 
 #mem1 figure {
